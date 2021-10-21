@@ -6,11 +6,13 @@ import Navbar from '../components/Navbar/Navbar';
 import Featured from '../components/featured/Featured';
 import List from '../components/list/List';
 
-const Home = () => {
+const Home = ({index}) => {
     return (
         <div className="home">
             <Navbar />
             <Featured />
+            <List />
+            <List />
             <List />
             <List />
             <List />
