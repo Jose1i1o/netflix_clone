@@ -11,8 +11,8 @@ export default function ListItem({index}) {
     return (
         <div className="listItem"
             style={{left: isHovered && index * 235 -50 + index * 5}}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onPointerEnter={() => setIsHovered(true)}
+            onPointerLeave={() => setIsHovered(false)}
         >
             <img 
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReeFYMYnxU-S3FvWn9IbH-ugWkrxaAmLS_0Q&usqp=CAU"
