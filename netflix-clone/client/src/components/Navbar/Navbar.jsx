@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./navbar.scss";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineNotificationsActive, MdArrowDropDownCircle } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -23,11 +24,17 @@ const Navbar = () => {
                     alt=""
                     >
                     </img>
-                    <span>Home</span>
-                    <span>Series</span>
-                    <span>Movies</span>
-                    <span>New & Popular</span>
-                    <span>My List</span>
+                    <Link to="/" className="link">
+                        <span>Home</span>
+                    </Link>
+                    <Link to="/series" className="link">
+                        <span>Series</span>
+                    </Link>
+                    <Link to="/movies" className="link">
+                        <span>Movies</span>
+                    </Link>
+                        <span>New & Popular</span>
+                        <span>My List</span>
                     </div>
                 <div className="navbar-right">
                     <FaSearch className="icon" />
